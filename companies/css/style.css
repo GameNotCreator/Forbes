@@ -1,0 +1,476 @@
+body {
+    background: #131313;
+  
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #131313;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  .container {
+    display: flex; /* make container a flex container */
+    flex-wrap: wrap; /* allow items to wrap to the next line */
+    align-items: center; /* center items vertically */
+   }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card-1 {
+    background-color: transparent;
+    margin: 0 250px 250px 0; /* add spacing of 20px on the right and bottom sides */
+    width: 20px;
+    height: 20px;
+    border: #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner-1 {
+    position: relative;
+    width: 1000%;
+    height: 800%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-1:hover .flip-card-inner-1 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-1, .flip-card-back-1 {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-1 {
+    background-image: url("https://i.pinimg.com/474x/64/66/91/64669174038cca7f9b758aebee758e2f.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    color: white;
+    justify-content: center;
+    display: table-row;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-1 {
+    width: 280%;
+    height: 250%;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+   .flip-card-2 {
+    background-color: transparent;
+    margin: 0 250px 250px 0; /* add spacing of 20px on the right and bottom sides */
+    width: 20px;
+    height: 20px;
+    border: #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner-2 {
+    position: relative;
+    width: 1000%;
+    height: 800%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-2:hover .flip-card-inner-2 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-2, .flip-card-back-2 {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-2 {
+    background-image: url("https://i.pinimg.com/474x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    color: white;
+    justify-content: center;
+    display: table-row;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-2 {
+    width: 280%;
+    height: 250%;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+   .flip-card-3 {
+    background-color: transparent;
+    margin: 0 250px 250px 0; /* add spacing of 20px on the right and bottom sides */
+    width: 20px;
+    height: 20px;
+    border: #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner-3 {
+    position: relative;
+    width: 1000%;
+    height: 800%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-3:hover .flip-card-inner-3 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-3, .flip-card-back-3 {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-3 {
+    background-image: url("https://i.pinimg.com/474x/0c/ea/1d/0cea1d0ea0b1fad26a702afffb8da896.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    color: white;
+    justify-content: center;
+    display: table-row;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-3 {
+    width: 280%;
+    height: 250%;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  image {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #000;
+    padding: 10px;
+    flex-direction: column;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #000;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: rgb(11, 11, 11);
+    padding: 10px;
+  }
+  
+  article img {
+    border: 20px solid #000;
+  
+  }
+  html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  }
+  #style-1::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+  #style-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }
+  
+  
+  
+  #stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 341px 1844px, #FFF;
+    animation: animStar 50s linear infinite;
+  }
+  #stars:after {
+    content: " ";
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 341px 1844px #FFF;
+  }
+  
+  #stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow:  923px 186px #FFF;
+    animation: animStar 100s linear infinite;
+  }
+  #stars2:after {
+    content: " ";
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 1026px, 923px 186px #FFF;
+  }
+  
+  #stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: #FFF;
+    animation: animStar 150s linear infinite;
+  }
+  #stars3:after {
+    content: " ";
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 853px 1244px #FFF ;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #131313;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  ul.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  
+  li.index a {
+    font-size: 19px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.index a:hover {
+    background-color: #111;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 1000px;
+  margin-bottom: 13px;
+  position: relative;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  
+  .mySlides {
+  display: none
+  }
+  
+  * {
+  box-sizing: border-box
+  }
+  
+  article.title{
+    display: table-column-group;
+    color:#FFF
+  }
+  
+  article article div p {
+    display: inline;
+  }
+  
+  
+  img {
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-left: 90px;
+  width: 318px;
+  height: 380px;
+  }
+  @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+  }
+  
+  .Social-media{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  }
+  a.sc{
+  display: flex;
+  font-size: 20px;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.5s
+  }
+
+
