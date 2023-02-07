@@ -1,3 +1,6 @@
+  html {
+    height: 100%;
+  }
   body {
     background: #131313;
   }
@@ -8,6 +11,65 @@
     padding: 30px;
     font-size: 35px;
   }
+
+  /* Moteur de recherche */
+
+  #searchForm {
+    background: #2d2d2d;
+    padding: 20px 10px;
+    width: 250px;
+    }
+    
+    input:focus::-webkit-input-placeholder {
+    color: transparent;
+    }
+    
+    input:focus:-moz-placeholder {
+    color: transparent;
+    }
+    
+    input:focus::-moz-placeholder {
+    color: transparent;
+    }
+    
+    #searchForm input {
+    outline: none;
+    }
+    
+    #searchForm input[type= "text"] {
+    background: url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 6px #000;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(61, 61, 61);
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #FFF;
+    width: 55%;
+    padding: 8px 15px 8px 30px;
+    }
+    
+    .button-submit {
+    background: #131313;
+    border-width: 0px;
+    padding: 9px 0px;
+    width: 23%;
+    cursor: pointer;
+    font: bold 12px Arial, Helvetica;
+    color: #fff;
+    text-shadow: 0 1px 0 #555;
+    }
+    
+    .button-submit:hover {
+    background: #4f5356;
+    }
+    
+    .button-submit:active {
+    background: #5b5d60;
+    outline: none;
+    }
+    
+    .button-submit::-moz-focus-inner {
+    border: 0;
+    }
 
   /* Style des flip cards */
 
