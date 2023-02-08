@@ -114,7 +114,6 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front-1 {
-    background-image: url("https://i.pinimg.com/474x/64/66/91/64669174038cca7f9b758aebee758e2f.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 300px;
@@ -171,7 +170,6 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front-2 {
-    background-image: url("https://i.pinimg.com/474x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 300px;
@@ -228,7 +226,6 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front-3 {
-    background-image: url("https://i.pinimg.com/474x/0c/ea/1d/0cea1d0ea0b1fad26a702afffb8da896.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 300px;
@@ -411,4 +408,46 @@
    section {
     display: -webkit-flex;
     display: flex;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #202020;
+    padding: 8px;
+    text-align: left;
+    cursor: pointer;
+    width: 33.33%; /* Divide 100% by 3 to get the width for each column */
+  }
+
+  @media only screen and (max-width: 800px) {
+    table td, table th {
+      padding: 0 20px 0 20px;
+      font-size: 10px;
+   }
+  }
+  table td, table th {
+    padding: 0 50px 0 50px;
+    color: #ddd;
+ }
+  
+  th {
+    background-color: #404040;
+  }
+  
+  .button-row:hover {
+    color: black;
+    background-color: #202020;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    th, td {
+      display: block;
+    }
+    td {
+      text-align: right;
+    }
   }

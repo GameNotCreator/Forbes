@@ -16,36 +16,4 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
           alert(`Imposible de trouver ${searchValue}`)
           break;
       }
-       
-    
-    // else if (searchValue.toLowerCase() === "apple") {
-    // }
-    // else if (searchValue.toLowerCase() === "samsung") {
-    // }
-    // else if (searchValue.toLowerCase() === "google") {
-    //   window.location.href = "google.html";
-    // }
-    // else if (searchValue.toLowerCase() === "amazon") {
-    //   window.location.href = "amazon.html";
-    // }
-    // else if (searchValue.toLowerCase() === "tesla") {
-    //   window.location.href = "tesla.html";
-    // }
-    // else if (searchValue.toLowerCase() === "samsung") {
-    //   window.location.href = "meta.html";
-    // }
-    // else if (searchValue.toLowerCase() === "samsung") {
-    //   window.location.href = "meta.html";
-    // }
-    // else if (searchValue.toLowerCase() === "samsung") {
-    //   window.location.href = "alphabet.html";
-    // }
-    // else if (searchValue.toLowerCase() === "samsung") {
-    //   window.location.href = "samsung.html";
-    // }
-    // else if (searchValue.toLowerCase() === "samsung") {
-    //   window.location.href = "samsung.html";
-    // }
-    // else {
-    // }
-  });
+});
