@@ -195,7 +195,7 @@
    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
    .flip-card-3 {
     background-color: transparent;
-    margin: 0 250px 250px 0; /* add spacing of 20px on the right and bottom sides */
+    margin: 0 250px 0px 0; /* add spacing of 20px on the right and bottom sides */
     width: 20px;
     height: 20px;
     border: #f1f1f1;
@@ -205,8 +205,8 @@
   /* This container is needed to position the front and back side */
   .flip-card-inner-3 {
     position: relative;
-    width: 1000%;
-    height: 800%;
+    width: 600%;
+    height: 340%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -266,9 +266,9 @@
   
   /* Style du corps de la page */
   article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
     background-color: rgb(11, 11, 11);
   
   }

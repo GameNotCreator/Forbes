@@ -1,6 +1,171 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Forbes | Companies</title>
+        <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/style.scss" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+    </head>
+    <body bgcolor="#1f1a25">'
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>'
+        <header>
+          <a href="../index.html" style="text-decoration-line: none;"><h1 align="center" style="color:#f5f5dc; text-decoration-line: none;">Forbes</h1></a>
+        </header>
+        <ul class="navbar">
+          <li class="index"><a href="../index.html">Home</a></li>
+          <li class="index"><a href="./index.html">Celebrities</a></li>
+          <li class="index"><a href="../companies/index.html">Companies</a></li>
+          <li class="index"><a href="../countries/index.html">Countries</a></li>
+        </ul>
+        <section>
+          <nav>
+            <ul>
+              <hr>
+              <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>
+              <hr>
+              <li><a  href="elon_musk.html" style="text-decoration-line: none; color: antiquewhite;">Elon Musk<a></li>
+              <br>
+              <li><a href="jeff_bezos.html" style="margin-right:150px;text-decoration-line: none; color: antiquewhite;">Jeff Bezos</a></li>
+              <br>
+              <li><a href="bernard_arnault.html" style="text-decoration-line: none; color: antiquewhite;">Bernard Arnault</a></li>
+              <br>
+              <li><a href="bill_gates.html" style="text-decoration-line: none; color: antiquewhite;">Bill Gates</a></li>
+              <br>
+              <li><a href="warren_buffett.html" style="text-decoration-line: none; color: antiquewhite;">Warren Buffett</a></li>
+              <br>
+              <li><a href="larry_page.html" style="text-decoration-line: none; color: antiquewhite;">Larry Page/a></li>
+              <br>
+              <li><a href="sergey_brin.html" style="text-decoration-line: none; color: antiquewhite;">Sergey Brin</a></li>
+              <br>
+              <li><a href="larry_ellison.html" style="text-decoration-line: none; color: antiquewhite;">Larry Ellison</a></li>
+              <br>
+              <li><a href="steve_ballmer.html" style="text-decoration-line: none; color: antiquewhite;">Steve Ballmer</a></li>
+              <br>
+              <li><a href="mukesh_ambani.html" style="text-decoration-line: none; color: antiquewhite;">Mukesh Ambani</a></li>
+              <hr>
+            </ul>
+            <form id="searchForm" method="get" action="/search">
+              <input name="q" id="searchInput" type="text" size="15" placeholder="Type here…" />
+              <button class="button-submit" type="submit" >Search</button>
+            </form>
+          </nav>
+          <section>
+           <article>
+          <p style="font-size: 50px;  color: #f5f5dc;text-align: center;">Top 10 The Richest in 2022</p>
+            <table id="ranking">
+              <thead>
+                <tr>
+                  <th style="color: black;padding: 10px 0 10px 0;text-align: center;">Picture</th>
+                  <th style="color: black;padding: 10px 0 10px 0;text-align: center;">Rank</th>
+                  <th style="color: black;padding: 10px 0 10px 0;text-align: center;">Name</th>
+                  <th style="color: black;padding: 10px 0 10px 0;text-align: center;">Net Worth</th>
+                  <th style="color: black;padding: 10px 0 10px 0;text-align: center;">Country / Territory</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="button-row" data-href="elon_musk.html">
+                  <td><img src="https://i.pinimg.com/474x/52/53/bb/5253bb5587a9f830af122723c1e4f785.jpg" width="80%"></td>
+                  <td>#1</td>
+                  <td>Elon Musk</td>
+                  <td>$219 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" id="button" data-href="jeff_bezos.html">
+                  <td><img src="https://i.pinimg.com/474x/94/f8/41/94f8417c97e22cd87fdd9900b491e49a.jpg" width="80%"></td>
+                  <td>#2</td>
+                  <td>Jeff Bezos</td>
+                  <td>$171 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="bernard_arnault.html">
+                  <td><img src="https://i.pinimg.com/474x/6c/c7/f8/6cc7f850c6028c17bbdff27131ed80ce.jpg" width="80%"></td>
+                  <td>#3</td>
+                  <td>Bernard Arnault & family</td>
+                  <td>$158 B</td>
+                  <td>France</td>
+                </tr>
+                <tr class="button-row" data-href="bill_gates.html">
+                  <td><img src="https://i.pinimg.com/474x/87/64/76/876476178e8cd6bcaab1269f7283d97b.jpg" width="80%"></td>
+                  <td>#4</td>
+                  <td>Bill Gates</td>
+                  <td>$129 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="warren_buffett.html">
+                  <td><img src="https://i.pinimg.com/474x/17/48/b8/1748b8d49e757abc69a74218120193c8.jpg" width="80%"></td>
+                  <td>#5</td>
+                  <td>Warren Buffett</td>
+                  <td>$118 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="larry_page.html">
+                  <td><img src="https://i.pinimg.com/474x/c4/28/a5/c428a532a4b6c34eedb4e26a07542cf8.jpg" width="80%"></td>
+                  <td>#6</td>
+                  <td>Larry Page</td>
+                  <td>$111 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="sergey_brin.html">
+                  <td><img src="https://i.pinimg.com/474x/d9/1e/02/d91e02796af1a906bb9bf9303ed1c6df.jpg" width="80%"></td>
+                  <td>#7</td>
+                  <td>Sergey Brin</td>
+                  <td>$107 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="larry_ellison.html">
+                  <td><img src="https://i.pinimg.com/474x/93/86/82/938682316cda21f87dc9394f69b061b5.jpg" width="80%"></td>
+                  <td>#8</td>
+                  <td>Larry Ellison</td>
+                  <td>$106 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="steve_ballmer.html">
+                  <td><img src="https://i.pinimg.com/474x/80/cc/77/80cc7762ae5be50d304792737b8319bb.jpg" width="80%"></td>
+                  <td>#9</td>
+                  <td>Steve Ballmer</td>
+                  <td>$91.4 B</td>
+                  <td>United States</td>
+                </tr>
+                <tr class="button-row" data-href="mukesh_ambani.html">
+                  <td><img src="https://i.pinimg.com/474x/12/cc/2d/12cc2d4e3e9c37dc5a97795649fc4ad3.jpg" width="80%"></td>
+                  <td>#10</td>
+                  <td>Mukesh Ambani</td>
+                  <td>$90.7 B</td>
+                  <td>India</td>
+                </tr>
+              </tbody>
+            </table>
+            <script>
+                const buttonRows = document.querySelectorAll('.button-row');
+                buttonRows.forEach(row => {
+                    row.addEventListener('click', function() {
+                        window.location.href = this.dataset.href;
+                    });
+                });
+            </script>
+           </article>      
+          </section>
+        </section>
+        <footer>
+          <p>Forbes.inc</p>
+          <div class="Social-media">
+            <a class="sc" href="https://github.com/GameNotCreator/"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+            <a class="sc" href=""><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+            <a class="sc" href="https://www.instagram.com/game_notcreator/q"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a class="sc" href="https://www.youtube.com/@GameNotCreator"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
+          </div>
+          <p>Copyright Hedi Fourati © 2022-2023. All rights reserved.</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
         <title>Forbes</title>
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         <meta name="viewport" conent="width=device-width, initial-scale=1.0">
