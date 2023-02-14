@@ -56,10 +56,7 @@ article img {
   border: 20px solid #000;
 
 }
-html {
-  height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-}
+
 #style-1::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
