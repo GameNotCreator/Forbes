@@ -420,7 +420,7 @@ th, td {
   padding: 8px;
   text-align: left;
   cursor: pointer;
-  width: 33.33%; /* Divide 100% by 3 to get the width for each column */
+  width: 20%; /* Divide 100% by 3 to get the width for each column */
 }
 
 @media only screen and (max-width: 800px) {
