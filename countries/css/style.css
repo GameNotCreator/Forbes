@@ -409,6 +409,7 @@ a.sc{
   display: -webkit-flex;
   display: flex;
 }
+ /* Indexage des pages dans un classement + Responsive */
 
 table {
   border-collapse: collapse;
@@ -452,4 +453,51 @@ th {
   td {
     text-align: right;
   }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    width: 100%;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  table tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Make the table cells stack vertically on smaller screens */
+  #ranking td, #ranking th {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hide the table header on smaller screens */
+  #ranking thead {
+    display: none;
+  }
+}
+
+/* 3D models */
+
+a-scene {
+  height: 3000px;
+  width: 600px;
 }

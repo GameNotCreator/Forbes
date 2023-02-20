@@ -410,7 +410,9 @@ a.sc{
   display: flex;
 }
 
-table {
+ /* Indexage des pages dans un classement + Responsive */
+
+ table {
   border-collapse: collapse;
   width: 100%;
 }
@@ -420,7 +422,7 @@ th, td {
   padding: 8px;
   text-align: left;
   cursor: pointer;
-  width: 20%; /* Divide 100% by 3 to get the width for each column */
+  width:25%; /* Divide 100% by 3 to get the width for each column */
 }
 
 @media only screen and (max-width: 800px) {
@@ -451,5 +453,45 @@ th {
   }
   td {
     text-align: right;
+  }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+  table {
+    width: 100%;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  table tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Make the table cells stack vertically on smaller screens */
+  #ranking td, #ranking th {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Hide the table header on smaller screens */
+  #ranking thead {
+    display: none;
   }
 }

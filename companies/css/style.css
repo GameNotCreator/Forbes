@@ -410,46 +410,89 @@
     display: flex;
   }
 
+ /* Indexage des pages dans un classement + Responsive */
+
+ table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #202020;
+  padding: 8px;
+  text-align: left;
+  cursor: pointer;
+  width:25%; /* Divide 100% by 3 to get the width for each column */
+}
+
+@media only screen and (max-width: 800px) {
+  table td, table th {
+    padding: 0 20px 0 20px;
+    font-size: 10px;
+ }
+}
+table td, table th {
+  padding: 0 50px 0 50px;
+  color: #ddd;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+th {
+  background-color: #404040;
+}
+
+.button-row:hover {
+  color: black;
+  background-color: #202020;
+}
+
+@media only screen and (max-width: 600px) {
+  th, td {
+    display: block;
+  }
+  td {
+    text-align: right;
+  }
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
   table {
-    border-collapse: collapse;
     width: 100%;
   }
-  
-  th, td {
-    border: 1px solid #202020;
-    padding: 8px;
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  table tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
     text-align: left;
-    cursor: pointer;
-    width: 20%; /* Divide 100% by 3 to get the width for each column */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Make the table cells stack vertically on smaller screens */
+  #ranking td, #ranking th {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
-  @media only screen and (max-width: 800px) {
-    table td, table th {
-      padding: 0 20px 0 20px;
-      font-size: 10px;
-   }
+  /* Hide the table header on smaller screens */
+  #ranking thead {
+    display: none;
   }
-  table td, table th {
-    padding: 0 50px 0 50px;
-    color: #ddd;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
- }
-  
-  th {
-    background-color: #404040;
-  }
-  
-  .button-row:hover {
-    color: black;
-    background-color: #202020;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    th, td {
-      display: block;
-    }
-    td {
-      text-align: right;
-    }
-  }
+}
+
