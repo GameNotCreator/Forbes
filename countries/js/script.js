@@ -1,64 +1,38 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
 document.getElementById("searchForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
   var searchValue = document.getElementById("searchInput").value;
   switch (searchValue.toLowerCase()) {
-      case 'brunei' || 'bruneidarussalam':
-        window.location.href = "brunei_darussalam.html";
-        break;
-      case 'hong kong' || 'hong kong sar':
-        window.location.href = "hong_kong_sar.html";
-        break;
-      case 'ireland':
-        window.location.href = "ireland.html";
-      case 'kuwait':
-        window.location.href = "kuwait.html";
-        break;             
-      case 'luxembourg':
-        window.location.href = "luxembourg.html";
-        break;            
-      case 'macao' || 'macao sar':
-        window.location.href = "macao_sar.html";
-        break;    
-      case 'norway':
-        window.location.href = "norway.html";
-        break;        
-      case 'quatar':
-        window.location.href = "quatar.html";
-        break;        
-      case 'singapore.html':
-        window.location.href = "singapore.html";
-        break;        
-      case 'emirates' || 'united arab emirates':
-        window.location.href = "united_arab_emirates.html";
-        break;
+    case 'united states' || 'usa':
+      window.location.href = "./united_states.html";
+      break;
+    case 'united kingdom' || 'uk':
+      window.location.href = "./united_kingdom.html";
+      break;
+    case 'japan':
+      window.location.href = "./japan.html";
+      break;
+    case 'italy':
+      window.location.href = "./italy.html";
+      break;             
+    case 'india':
+      window.location.href = "./india.html";
+      break;            
+    case 'germany':
+      window.location.href = "./germany.html";
+      break;    
+    case 'france':
+      window.location.href = "./france.html";
+      break;        
+    case 'china':
+      window.location.href = "./china.html";
+      break;        
+    case 'canada.html':
+      window.location.href = "./canada.html";
+      break;        
+    case 'brazil':
+      window.location.href = "./brazil.html";
+      break;
       case 'bernard arnault' || 'arnault':
         window.location.href = "./../celebrities/bernard_arnault.html";
         break;
@@ -94,3 +68,30 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
         break;
     }
 });
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}

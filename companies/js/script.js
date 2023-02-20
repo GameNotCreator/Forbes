@@ -33,35 +33,35 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
         case 'meta' || 'facebook':
           window.location.href = "mata.html";
           break;
-        case 'brunei' || 'brunei darussalam':
-          window.location.href = "./../countries/brunei_darussalam.html";
+        case 'united states' || 'usa':
+          window.location.href = "./../countries/united_states.html";
           break;
-        case 'hong kong' || 'hong kong sar':
-          window.location.href = "./../countries/hong_kong_sar.html";
+        case 'united kingdom' || 'uk':
+          window.location.href = "./../countries/united_kingdom.html";
           break;
-        case 'ireland':
-          window.location.href = "./../countries/ireland.html";
+        case 'japan':
+          window.location.href = "./../countries/japan.html";
           break;
-        case 'kuwait':
-          window.location.href = "./../countries/kuwait.html";
+        case 'italy':
+          window.location.href = "./../countries/italy.html";
           break;             
-        case 'luxembourg':
-          window.location.href = "./../countries/luxembourg.html";
+        case 'india':
+          window.location.href = "./../countries/india.html";
           break;            
-        case 'macao' || 'macao sar':
-          window.location.href = "./../countries/macao_sar.html";
+        case 'germany':
+          window.location.href = "./../countries/germany.html";
           break;    
-        case 'norway':
-          window.location.href = "./../countries/norway.html";
+        case 'france':
+          window.location.href = "./../countries/france.html";
           break;        
-        case 'qatar':
-          window.location.href = "./../countries/qatar.html";
+        case 'china':
+          window.location.href = "./../countries/china.html";
           break;        
-        case 'singapore.html':
-          window.location.href = "./../countries/singapore.html";
+        case 'canada.html':
+          window.location.href = "./../countries/canada.html";
           break;        
-        case 'emirates' || 'united arab emirates':
-          window.location.href = "./../countries/united_arab_emirates.html";
+        case 'brazil':
+          window.location.href = "./../countries/brazil.html";
           break;
         case 'bernard arnault' || 'arnault':
           window.location.href = "./../celebrities/bernard_arnault.html";
