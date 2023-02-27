@@ -59,7 +59,8 @@
               </form>
           </nav>
           <article>
-        <a-scene embedded  style="height: 1000px;">
+            <div id="online-status">
+              <a-scene embedded  style="height: 1000px;">
                 <a-text
                     value="United States of America #1\n\n2021 PIB : $22.67 trillion   2021 GDP per capita : $68,428\n\nThe United States of America is a vast country located in North America, with a population of over 330 million people. Its diverse landscape is home to many major cities, such as New York City, Los Angeles, and Chicago, and is steeped in a rich history and culture.\n\nThe United States is a global superpower with the world's largest economy by nominal GDP. Its mixed economy is characterized by a significant private sector and a highly skilled and diverse workforce. The country is renowned for its technological innovation, with many of the world's leading tech companies based in the United States.\n\nBeyond its economic might, the United States is a key player in global politics, as evidenced by its membership in the United Nations, NATO, and other international organizations. Its military is the most powerful in the world and participates in various international missions. The country's values of individualism, democracy, freedom, and human rights have had a profound impact on global culture and trends."
                     font="dejavu"
@@ -70,7 +71,30 @@
                     anchor="center"
                     align="center"
                 ></a-text>
-        </a-scene>
+        </a-scene>            </div>
+            
+            <div id="offline-status">
+              <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+                United States of America #1<br><br>
+                
+                2021 PIB : $22.67 trillion   2021 GDP per capita : $68,428<br><br>
+                
+                The United States of America is a vast country located in North America, with a population of over 330 million people. Its diverse landscape is home to many major cities, such as New York City, Los Angeles, and Chicago, and is steeped in a rich history and culture.<br><br>
+                
+                The United States is a global superpower with the world's largest economy by nominal GDP. Its mixed economy is characterized by a significant private sector and a highly skilled and diverse workforce. The country is renowned for its technological innovation, with many of the world's leading tech companies based in the United States.<br><br>
+                
+                Beyond its economic might, the United States is a key player in global politics, as evidenced by its membership in the United Nations, NATO, and other international organizations. Its military is the most powerful in the world and participates in various international missions. The country's values of individualism, democracy, freedom, and human rights have had a profound impact on global culture and trends.<br><br><br>
+              </div>              
+            </div>
+            <script>
+              if (navigator.onLine) {
+                document.getElementById("online-status").style.display = "block";
+                document.getElementById("offline-status").style.display = "none";
+              } else {
+                document.getElementById("online-status").style.display = "none";
+                document.getElementById("offline-status").style.display = "block";
+              }
+            </script>    
         <div class="container">
             <div class="flip-card-1" style="display: inline-block;">
               <div class="flip-card-inner-1">

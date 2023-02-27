@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Forbes</title>
-        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <title>Forbes | Sergey Brin</title>
+        <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
         <meta name="viewport" conent="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/style.scss" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
     </head>
     <body bgcolor="#1f1a25">'
       <div id='stars'></div>
@@ -16,8 +20,8 @@
           <a href="main.html" style="text-decoration-line: none;"><h1 align="center" style="color:#f5f5dc; text-decoration-line: none;">Forbes</h1></a>
         </header>
         <ul class="navbar">
-          <li class="index"><a href="../main.html">Home</a></li>
-          <li class="index"><a href="index.html">Celebrities</a></li>
+          <li class="index"><a href="../index.html">Home</a></li>
+          <li class="index"><a href="./index.html">Celebrities</a></li>
           <li class="index"><a href="../companies/index.html">Companies</a></li>
           <li class="index"><a href="../countries/index.html">Countries</a></li>
         </ul>
@@ -27,113 +31,106 @@
               <hr>
               <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>
               <hr>
-              <li><a href="elon_musk.html" style="text-decoration-line: none; color: antiquewhite;">Elon Musk<a></li>
+              <li><a  href="elon_musk.html" style="text-decoration-line: none; color: antiquewhite;">Elon Musk<a></li>
               <br>
-              <li><a href="jeff_bezos.html" style="text-decoration-line: none; color: antiquewhite;">Jeff Bezos</a></li>
+              <li><a href="jeff_bezos.html" style="margin-right:150px;text-decoration-line: none; color: antiquewhite;">Jeff Bezos</a></li>
               <br>
               <li><a href="bernard_arnault.html" style="text-decoration-line: none; color: antiquewhite;">Bernard Arnault</a></li>
               <br>
               <li><a href="bill_gates.html" style="text-decoration-line: none; color: antiquewhite;">Bill Gates</a></li>
               <br>
-              <li><a href="warren_buffet.html" style="text-decoration-line: none; color: antiquewhite;">Warren Buffet</a></li>
+              <li><a href="warren_buffett.html" style="text-decoration-line: none; color: antiquewhite;">Warren Buffett</a></li>
               <br>
               <li><a href="larry_page.html" style="text-decoration-line: none; color: antiquewhite;">Larry Page</a></li>
               <br>
               <li><a href="sergey_brin.html" style="text-decoration-line: none; color: antiquewhite;">Sergey Brin</a></li>
               <br>
-              <li><a href="larry_ellison.html" style="text-decoration-line: none; color: antiquewhite;">Larry Ellisson</a></li>
+              <li><a href="larry_ellison.html" style="text-decoration-line: none; color: antiquewhite;">Larry Ellison</a></li>
               <br>
-              <li><a href="steve_ballmer.html" style="text-decoration-line: none; color: antiquewhite;">Steve Balmer</a></li>
+              <li><a href="steve_ballmer.html" style="text-decoration-line: none; color: antiquewhite;">Steve Ballmer</a></li>
               <br>
               <li><a href="mukesh_ambani.html" style="text-decoration-line: none; color: antiquewhite;">Mukesh Ambani</a></li>
               <hr>
             </ul>
+              <form id="searchForm" method="get" action="/search">
+                <input name="q" id="searchInput" type="text" size="15" placeholder="Type here…" />
+                <button class="button-submit" type="submit" >Search</button>
+              </form>
           </nav>
-
-
           <article>
-            <h1 style="font-size: 50px;  color: #f5f5dc;">Sergey Brin #7</h1>
-            <hr>
-            <ul>
-              <li style="font-size: 20px; color: #f5f5dc;">Sergey Brin stepped down as president of Alphabet, parent company of Google, in December 2019 but remains a controller shareholder and a board member.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">He cofounded Google with Larry Page in 1998 after the two met at Stanford University while studying for advanced degrees in computer science.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">Google went public in 2004 and began trading as Alphabet, a newly created parent company, in 2015.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">Brin was absent from public Alphabet events for much of 2019; he spent his time on Alphabet's moonshot research lab X.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">Brin is reportedly funding a high-tech airship project.</li>
-
-              
-            </ul>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <hr style="margin-top: 178px;">
-            <br>
-            <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/sergey_brin_why_google_glass" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-          </article>
-          <hr>
-          <article class="image">
-            <div style="vertical-align: middle;margin-top: 10px; margin-left: 20px;">
-              <h1 style="font-size: 20px;  color: #f5f5dc;margin-bottom: 40px;">2022 Billionaires Net Worth : $107B</h1>
-              <h1 style="font-size: 20px;  color: #f5f5dc;margin-bottom: 10px;">Real Time Net Worth : $75.8B</h1> 
-            </div>            
-            <div class="slideshow-container">
-              <hr style="margin-top: 51px;"> 
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/55/4f/f5/554ff5f4ba282704cf3054596b06cc74.jpg">
+            <div id="online-status">
+              <a-scene embedded style="height: 1000px;">
+                <a-text
+                  value="Sergey Brin #7\n\n2022 Billionaires Net Worth: $98.3B\n\nSergey Brin is a Russian-American computer scientist and entrepreneur who co-founded Google with Larry Page. Born in Moscow in 1973, Brin immigrated to the United States with his family when he was six years old. He studied computer science at Stanford University, where he met Larry Page and together they developed the PageRank algorithm, which became the basis for Google's search engine.\n\nBrin served as the President of Google's parent company, Alphabet Inc., until 2019 and is now a board member and controlling shareholder of the company. He is also known for his philanthropic work, particularly through the Brin Wojcicki Foundation, which he co-founded with his ex-wife Anne Wojcicki.\n\nIn addition to his work at Google, Brin has been involved in several other ventures, including co-founding X, a company that develops "moonshot" projects aimed at solving major global problems. He is also an investor in several startups and has been involved in research and development in various fields, including artificial intelligence and biotechnology."
+                  font="dejavu"
+                  font-color="#faead6"
+                  width="3.5"
+                  position="0 1.5 -3"
+                  wrap-count="50"
+                  anchor="center"
+                  align="center"
+                ></a-text>
+              </a-scene>
+            </div>
+            
+            <div id="offline-status">
+              <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+                Sergey Brin #7<br><br>
+                2022 Billionaires Net Worth: $98.3B<br><br>
+                Sergey Brin is a Russian-American computer scientist and entrepreneur who co-founded Google with Larry Page. Born in Moscow in 1973, Brin immigrated to the United States with his family when he was six years old. He studied computer science at Stanford University, where he met Larry Page and together they developed the PageRank algorithm, which became the basis for Google's search engine.<br><br>
+                Brin served as the President of Google's parent company, Alphabet Inc., until 2019 and is now a board member and controlling shareholder of the company. He is also known for his philanthropic work, particularly through the Brin Wojcicki Foundation, which he co-founded with his ex-wife Anne Wojcicki.<br><br>
+                In addition to his work at Google, Brin has been involved in several other ventures, including co-founding X, a company that develops "moonshot" projects aimed at solving major global problems. He is also an investor in several startups and has been involved in research and development in various fields, including artificial intelligence and biotechnology.<br><br><br>
               </div>
-              
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/ad/60/da/ad60daeb30eb0c08d08278385f8e844d.jpg">
+            </div>
+          <script>
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+          </script>      
+          <div class="container">
+            <div class="flip-card-1" style="display: inline-block;">
+              <div class="flip-card-inner-1">
+                <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/236x/a2/d3/20/a2d32039addcc539f4db921d6dc9c72a.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Tweets</p>
+                </div>
+                <div class="flip-card-back-1">
+                <a class="twitter-timeline" data-lang="en" data-width="800" data-height="1000" data-theme="dark" href="https://twitter.com/Google?ref_src=twsrc%5Etfw">Tweets by Google</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
               </div>
-              
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/e9/ed/6e/e9ed6e2283f24e0649689afa93c6e124.jpg">
+            </div>
+            <div class="flip-card-2" style="display: inline-block;">
+              <div class="flip-card-inner-2">
+                <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/236x/76/9d/4c/769d4c3fa678f480006f1d3488413820.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Video</p>
+                </div>
+                <div class="flip-card-back-2">
+                  <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/sergey_brin_why_google_glass" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+                </div>
               </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/f1/49/fa/f149fa57aef04374f37c042bcba02ee7.jpg">
+            </div>
+            <div class="flip-card-3" style="display: inline-block;">
+              <div class="flip-card-inner-3">
+                <div class="flip-card-front-3" style="background-image: url('https://gofashionideas.com/wp-content/uploads/2019/10/ccelebritiesnicole-shanahan-sergey-brin-400x280.jpg');">
+                <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Wealth History</p>                  
+                </div>
+                <div class="flip-card-back-3">
+                  <img src="img/sergeybrinworth.png" width="200%" height="auto"  style="border: none;background-color: #f5f5dc;">  
+                </div>
               </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/98/03/83/980383bf6d4a02a2c7ab65115050681a.jpg">
-              </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/60/ca/63/60ca630abc8a2e5cf4eb97617058f693.jpg">
-              </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/1a/fb/55/1afb559047c77b9028a3a21262bf191b.jpg">
-              </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/e9/f1/d7/e9f1d70d756b2fd1e505012669bbcf67.jpg">
-              </div>
-              
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-              
-              </div>
-              <hr style="margin-top:40px;margin-bottom: 45px;">
-              <p style="text-align: center;color: #f5f5dc;font-size: 20px;">Wealth History</p>
-              <section >
-                <br>
-                <img style="width:70%;height: auto; border: none;"src="img/sergeybrinworth.png">
-              </section>
-            </article>
+            </div>
+          </div> 
+         </article>
         </section>
-
         <footer>
           <p>Forbes.inc</p>
           <div class="Social-media">
             <a class="sc" href="https://github.com/GameNotCreator/"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
             <a class="sc" href=""><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
-            <a class="sc" href="https://www.instagram.com/game_notcreator/q"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a class="sc" href="https://www.instagram.com/game_notcreator/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
             <a class="sc" href="https://www.youtube.com/@GameNotCreator"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
           </div>
           <p>Copyright Hedi Fourati © 2022-2023. All rights reserved.</p>

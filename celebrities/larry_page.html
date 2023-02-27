@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Forbes</title>
-        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        <title>Forbes | Bill Gates</title>
+        <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
         <meta name="viewport" conent="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/style.scss" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
     </head>
     <body bgcolor="#1f1a25">'
       <div id='stars'></div>
@@ -16,8 +20,8 @@
           <a href="main.html" style="text-decoration-line: none;"><h1 align="center" style="color:#f5f5dc; text-decoration-line: none;">Forbes</h1></a>
         </header>
         <ul class="navbar">
-          <li class="index"><a href="../main.html">Home</a></li>
-          <li class="index"><a href="index.html">Celebrities</a></li>
+          <li class="index"><a href="../index.html">Home</a></li>
+          <li class="index"><a href="./index.html">Celebrities</a></li>
           <li class="index"><a href="../companies/index.html">Companies</a></li>
           <li class="index"><a href="../countries/index.html">Countries</a></li>
         </ul>
@@ -27,113 +31,109 @@
               <hr>
               <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>
               <hr>
-              <li><a href="elon_musk.html" style="text-decoration-line: none; color: antiquewhite;">Elon Musk<a></li>
+              <li><a  href="elon_musk.html" style="text-decoration-line: none; color: antiquewhite;">Elon Musk<a></li>
               <br>
-              <li><a href="jeff_bezos.html" style="text-decoration-line: none; color: antiquewhite;">Jeff Bezos</a></li>
+              <li><a href="jeff_bezos.html" style="margin-right:150px;text-decoration-line: none; color: antiquewhite;">Jeff Bezos</a></li>
               <br>
               <li><a href="bernard_arnault.html" style="text-decoration-line: none; color: antiquewhite;">Bernard Arnault</a></li>
               <br>
               <li><a href="bill_gates.html" style="text-decoration-line: none; color: antiquewhite;">Bill Gates</a></li>
               <br>
-              <li><a href="warren_buffet.html" style="text-decoration-line: none; color: antiquewhite;">Warren Buffet</a></li>
+              <li><a href="warren_buffett.html" style="text-decoration-line: none; color: antiquewhite;">Warren Buffett</a></li>
               <br>
               <li><a href="larry_page.html" style="text-decoration-line: none; color: antiquewhite;">Larry Page</a></li>
               <br>
               <li><a href="sergey_brin.html" style="text-decoration-line: none; color: antiquewhite;">Sergey Brin</a></li>
               <br>
-              <li><a href="larry_ellison.html" style="text-decoration-line: none; color: antiquewhite;">Larry Ellisson</a></li>
+              <li><a href="larry_ellison.html" style="text-decoration-line: none; color: antiquewhite;">Larry Ellison</a></li>
               <br>
-              <li><a href="steve_ballmer.html" style="text-decoration-line: none; color: antiquewhite;">Steve Balmer</a></li>
+              <li><a href="steve_ballmer.html" style="text-decoration-line: none; color: antiquewhite;">Steve Ballmer</a></li>
               <br>
               <li><a href="mukesh_ambani.html" style="text-decoration-line: none; color: antiquewhite;">Mukesh Ambani</a></li>
               <hr>
             </ul>
+              <form id="searchForm" method="get" action="/search">
+                <input name="q" id="searchInput" type="text" size="15" placeholder="Type here…" />
+                <button class="button-submit" type="submit" >Search</button>
+              </form>
           </nav>
-
-
           <article>
-            <h1 style="font-size: 50px;  color: #f5f5dc;">Larry Page #6</h1>
-            <hr>
-            <ul>
-              <li style="font-size: 20px; color: #f5f5dc;">Larry Page stepped down as CEO of Alphabet, the parent of Google, in December 2019 but remains a board member and a controlling shareholder.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">He cofounded Google in 1998 with fellow Stanford Ph.D. student Sergey Brin.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">With Brin, Page invented Google's PageRank algorithm, which powers the search engine.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">Page was CEO until 2001, when Eric Schmidt took over, and then from 2011 until 2015, when he became CEO of Google's new parent company Alphabet.</li>
-              <li style="font-size: 20px; color: #f5f5dc;">He is a founding investor in space exploration company Planetary Resources and is also funding "flying car" startups Kitty Hawk and Opener.</li>
+            <div id="online-status">
+              <a-scene embedded style="height: 1000px;">
+                <a-text
+                  value="Larry Page #6\n\n2022 Billionaires Net Worth : $97.6B\n\nLarry Page is a billionaire entrepreneur and computer scientist, best known as the co-founder of Google, one of the world's most valuable and innovative companies. Along with his partner, Sergey Brin, Page revolutionized the way people access and use information on the internet, creating a powerful search engine that has become a ubiquitous tool for billions of people worldwide.\n\nBeyond his contributions to the tech industry, Page has been involved in several philanthropic endeavors, particularly in the areas of healthcare and renewable energy. He has also invested in several startups and companies, such as SpaceX and Planetary Resources, that are focused on space exploration and colonization.\n\nPage holds a degree in computer science from Stanford University and has been recognized for his contributions to technology and entrepreneurship, receiving numerous awards and honors, including the Marconi Prize and the Carnegie Mellon University School of Computer Science Distinguished Alumni Award."
+                  font="dejavu"
+                  font-color="#faead6"
+                  width="3.5"
+                  position="0 1.5 -3"
+                  wrap-count="50"
+                  anchor="center"
+                  align="center"
+                ></a-text>
+              </a-scene>
+            </div>
+            <div id="offline-status">
+              <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+                Larry Page #6<br><br>
 
-              
-            </ul>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <p style="font-size: 20px; color: #f5f5dc;"></p>
-            <hr style="margin-top: 178px;">
-            <br>
-            <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/larry_page_where_s_google_going_next" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-          </article>
-          <hr>
-          <article class="image">
-            <div style="vertical-align: middle;margin-top: 10px; margin-left: 20px;">
-              <h1 style="font-size: 20px;  color: #f5f5dc;margin-bottom: 40px;">2022 Billionaires Net Worth : $111B</h1>
-              <h1 style="font-size: 20px;  color: #f5f5dc;margin-bottom: 10px;">Real Time Net Worth : $79B</h1> 
-            </div>            
-            <div class="slideshow-container">
-              <hr style="margin-top: 51px;"> 
+                2022 Billionaires Net Worth : $97.6B<br><br>
 
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/c4/28/a5/c428a532a4b6c34eedb4e26a07542cf8.jpg">
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/ee/b9/7f/eeb97f5540d903d5f4c170742b385b31.jpg">
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/35/01/c9/3501c93c1c6ae98212e8b47ff9cbe278.jpg">
-              </div>
+                Larry Page is a billionaire entrepreneur and computer scientist, best known as the co-founder of Google, one of the world's most valuable and innovative companies. Along with his partner, Sergey Brin, Page revolutionized the way people access and use information on the internet, creating a powerful search engine that has become a ubiquitous tool for billions of people worldwide.<br><br>
 
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/1c/8e/3b/1c8e3b179ae8cd5c620fd084ade8ffc8.jpg">
-              </div>
+                Beyond his contributions to the tech industry, Page has been involved in several philanthropic endeavors, particularly in the areas of healthcare and renewable energy. He has also invested in several startups and companies, such as SpaceX and Planetary Resources, that are focused on space exploration and colonization.<br><br>
 
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/25/9f/6c/259f6c6383b0bc97549f1005b86250cf.jpg">
+                Page holds a degree in computer science from Stanford University and has been recognized for his contributions to technology and entrepreneurship, receiving numerous awards and honors, including the Marconi Prize and the Carnegie Mellon University School of Computer Science Distinguished Alumni Award.<br><br><br>
+            </div>
+          </div>
+          <script>
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+          </script>      
+          <div class="container">
+            <div class="flip-card-1" style="display: inline-block;">
+              <div class="flip-card-inner-1">
+                <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/564x/7e/28/e6/7e28e66b0ed5a1d469def16d2ec0e219.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Tweets</p>
+                </div>
+                <div class="flip-card-back-1">
+                <a class="twitter-timeline" data-lang="en" data-width="800" data-height="1000" data-theme="dark" href="https://twitter.com/Google?ref_src=twsrc%5Etfw">Tweets by Google</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
               </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/fc/dd/ae/fcddae8c0392ceb72024b415cb6d13c6.jpg">
+            </div>
+            <div class="flip-card-2" style="display: inline-block;">
+              <div class="flip-card-inner-2">
+                <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/564x/98/d3/c5/98d3c540636c0ed7e28f5744cc9a2cb1.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Video</p>
+                </div>
+                <div class="flip-card-back-2">
+                  <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/larry_page_where_s_google_going_next" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+                </div>
               </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/474x/cc/35/ac/cc35accb3d274e0ba4689dd41111f415.jpg">
+            </div>
+            <div class="flip-card-3" style="display: inline-block;">
+              <div class="flip-card-inner-3">
+                <div class="flip-card-front-3" style="background-image: url('https://www.businessinsider.in/thumb/msid-69450176,width-640,resizemode-4,imgsize-1210988/The-youngest-heirs-and-heiresses-poised-to-inherit-billions-from-their-parents/Larry-Page-has-two-children-who-are-approximately-eight-and-ten-years-old-with-his-wife-Lucy-.jpg');">
+                <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Wealth History</p>                  
+                </div>
+                <div class="flip-card-back-3">
+                  <img src="img/larrypageworth.png" width="200%" height="auto"  style="border: none;background-color: #f5f5dc;">  
+                </div>
               </div>
-
-              <div class="mySlides fade">
-                <img src="https://i.pinimg.com/564x/ac/ca/e0/accae0a1f427cb3cf7c9010a2f517669.jpg">
-              </div>
-              
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-              
-              </div>
-              <hr style="margin-top:62px;margin-bottom: 45px;">
-              <p style="text-align: center;color: #f5f5dc;font-size: 20px;">Wealth History</p>
-              <section >
-                <br>
-                <img style="width:70%;height: auto; border: none;"src="img/warrenbuffettworth.png">
-              </section>
-            </article>
+            </div>
+          </div> 
+         </article>
         </section>
-
         <footer>
           <p>Forbes.inc</p>
           <div class="Social-media">
             <a class="sc" href="https://github.com/GameNotCreator/"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
             <a class="sc" href=""><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
-            <a class="sc" href="https://www.instagram.com/game_notcreator/q"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a class="sc" href="https://www.instagram.com/game_notcreator/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
             <a class="sc" href="https://www.youtube.com/@GameNotCreator"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
           </div>
           <p>Copyright Hedi Fourati © 2022-2023. All rights reserved.</p>

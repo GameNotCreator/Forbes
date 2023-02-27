@@ -7,6 +7,11 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/style.scss" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
+
     </head>
     <body bgcolor="#1f1a25">'
       <div id='stars'></div>
@@ -54,19 +59,50 @@
               </form>
           </nav>
           <article>
-          <p style="font-size: 50px;  color: #f5f5dc;text-align: center;">Apple #1</p>
-          <p style="font-size: 20px;  color: #f5f5dc;text-align: center;">2022 Revenue : $378.7B &nbsp&nbsp&nbsp&nbsp Share Price : $151.73</p>
-          <ul>
-            <li style="font-size: 20px; color: #f5f5dc;">Apple, Inc. engages in the design, manufacture, and sale of smartphones, personal computers, tablets, wearables and accessories, and other variety of related services.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">It operates through the following geographical segments: Americas, Europe, Greater China, Japan, and Rest of Asia Pacific. . The Americas segment includes North and South America. The Europe segment consists of European countries, as well as India, the Middle East, and Africa. The Greater China segment comprises of China, Hong Kong, and Taiwan. The Rest of Asia Pacific segment includes Australia and Asian countries.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">Its products and services include iPhone, Mac, iPad, AirPods, Apple TV, Apple Watch, Beats products, Apple Care, iCloud, digital content stores, streaming, and licensing services.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The company was founded by Steven Paul Jobs, Ronald Gerald Wayne, and Stephen G. Wozniak on April 1, 1976 and is headquartered in Cupertino, CA.</li>
-          </ul>
+            <div id="online-status">
+              <a-scene embedded  style="height: 1000px;">
+                <a-text
+                    value="Apple #1\n\n2022 Company Net Worth: $2.86 trillion\n\nApple Inc. is a technology company that designs, develops, and sells consumer electronics, computer software, and online services. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, Apple has become one of the most valuable and recognizable companies in the world. \n\nApple's product line includes the iPhone, iPad, Mac, Apple Watch, and Apple TV, as well as popular software applications such as iTunes, the App Store, and Apple Music. The company is also involved in the development of new technologies such as augmented reality and self-driving cars.\n\nApple is known for its innovative design, user-friendly interfaces, and premium pricing strategy. The company has a large and dedicated fanbase, and its products are often regarded as status symbols.\n\nApple has faced criticism over its supply chain practices and its approach to data privacy. The company has also been involved in high-profile legal disputes, such as its ongoing battle with Epic Games over the App Store's commission fees.\n\nDespite these challenges, Apple remains a dominant player in the tech industry and continues to be one of the most profitable companies in the world."
+                    font="dejavu"
+                    font-color="#faead6"
+                    width="3.5"
+                    position="0 1.5 -3"
+                    wrap-count="50"
+                    anchor="center"
+                    align="center"
+                ></a-text>
+            </a-scene>            
+          </div>
+          <div id="offline-status">
+            <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+              Apple #1<br><br>
+              2022 Company Net Worth: $2.86 trillion<br><br>
+          
+              Apple Inc. is a technology company that designs, develops, and sells consumer electronics, computer software, and online services. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, Apple has become one of the most valuable and recognizable companies in the world. <br><br>
+              
+              Apple's product line includes the iPhone, iPad, Mac, Apple Watch, and Apple TV, as well as popular software applications such as iTunes, the App Store, and Apple Music. The company is also involved in the development of new technologies such as augmented reality and self-driving cars.<br><br>
+              
+              Apple is known for its innovative design, user-friendly interfaces, and premium pricing strategy. The company has a large and dedicated fanbase, and its products are often regarded as status symbols.<br><br>
+              
+              Apple has faced criticism over its supply chain practices and its approach to data privacy. The company has also been involved in high-profile legal disputes, such as its ongoing battle with Epic Games over the App Store's commission fees.<br><br>
+              
+              Despite these challenges, Apple remains a dominant player in the tech industry and continues to be one of the most profitable companies in the world.<br><br><br>
+            </div>              
+          </div>
+          <script>
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+          </script> 
           <div class="container">
               <div class="flip-card-1" style="display: inline-block;">
                 <div class="flip-card-inner-1">
                   <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/474x/64/66/91/64669174038cca7f9b758aebee758e2f.jpg');">
-                    <p style="vertical-align:middle;margin-top: 70px;">Map</p>
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Map</p>
                   </div>
                   <div class="flip-card-back-1">
                     <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=apple%20park+(Apple)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
@@ -76,7 +112,7 @@
               <div class="flip-card-2" style="display: inline-block;">
                 <div class="flip-card-inner-2">
                   <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/474x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg');">
-                    <p style="vertical-align:middle;margin-top: 70px;">Video</p>
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Video</p>
                   </div>
                   <div class="flip-card-back-2">
                     <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/MnrJzXM7a6o" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
@@ -86,7 +122,7 @@
               <div class="flip-card-3" style="display: inline-block;">
                 <div class="flip-card-inner-3">
                   <div class="flip-card-front-3" style="background-image: url('https://i.pinimg.com/474x/0c/ea/1d/0cea1d0ea0b1fad26a702afffb8da896.jpg');">
-                <p style="vertical-align:middle;margin-top: 70px;">Stocks</p>
+                <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Stocks</p>
                   </div>
                   <div class="flip-card-back-3">
                     <iframe src="./widgets/aapl.html" frameborder="0" style="width: 100%;border: none; height: 500px;"></iframe>  
@@ -94,9 +130,9 @@
                 </div>
               </div>
             </div>   
-            <div align="center">
+            <!-- <div align="center">
               <iframe title="Apple iPhone 13 Pro Max" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/58eb085ff4e2440aa3609256210029b8/embed?autospin=1&autostart=1&ui_hint=0&ui_theme=dark" style="border-radius: 100px;"> </iframe>
-            </div>
+            </div> -->
          </article>
         </section>
         <footer>

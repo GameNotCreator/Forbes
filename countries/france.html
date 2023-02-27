@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forbes | France</title>
+        <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/style.scss" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
+
+    </head>
+    <body bgcolor="#1f1a25">'
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>'
+        <header>
+          <a href="main.html" style="text-decoration-line: none;"><h1 align="center" style="color:#f5f5dc; text-decoration-line: none;">Forbes</h1></a>
+        </header>
+        <ul class="navbar">
+            <li class="index"><a href="../index.html">Home</a></li>
+            <li class="index"><a href="../celebrities/index.html">Celebrities</a></li>
+            <li class="index"><a href="../companies/index.html">Companies</a></li>
+            <li class="index"><a href="./index.html">Countries</a></li>
+        </ul>
+        <section>
+          <nav>
+            <ul>
+              <hr>
+              <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>
+              <hr>
+              <li><a  href="united_states.html" style="text-decoration-line: none; color: antiquewhite;">United States of America<a></li>
+                <br>
+                <li><a href="china.html" style="margin-right:100px;text-decoration-line: none; color: antiquewhite;">China</a></li>
+                <br>
+                <li><a href="japan.html" style="text-decoration-line: none; color: antiquewhite;">Japan</a></li>
+                <br>
+                <li><a href="germany.html" style="text-decoration-line: none; color: antiquewhite;">Germany</a></li>
+                <br>
+                <li><a href="united_kingdom.html" style="text-decoration-line: none; color: antiquewhite;">United Kingdom</a></li>
+                <br>
+                <li><a href="france.html" style="text-decoration-line: none; color: antiquewhite;">France</a></li>
+                <br>
+                <li><a href="india.html" style="text-decoration-line: none; color: antiquewhite;">India</a></li>
+                <br>
+                <li><a href="italy.html" style="text-decoration-line: none; color: #faead6;">Italy</a></li>
+                <br>
+                <li><a href="brazil.html" style="text-decoration-line: none; color: antiquewhite;">Brazil</a></li>
+                <br>
+                <li><a href="canada.html" style="text-decoration-line: none; color: antiquewhite;">Canada</a></li>
+              <hr>
+            </ul>
+              <form id="searchForm" method="get" action="/search">
+                <input name="q" id="searchInput" type="text" size="15" placeholder="Type here…" />
+                <button class="button-submit" type="submit" >Search</button>
+              </form>
+          </nav>
+          <article>
+            <div id="online-status">
+              <a-scene embedded style="height: 1000px;">
+                <a-text
+                  value="France #6\n\n2021 GDP: $3.15 trillion   2021 GDP per capita: $47,488\n\nFrance is a Western European country famous for its rich history, culture, and cuisine. With a population of over 67 million, France is the world's 7th largest economy by nominal GDP and a member of the G7 group of leading industrialized countries.\n\nFrance is renowned for its fashion industry, art, and architecture. It is home to some of the world's most famous landmarks such as the Eiffel Tower, the Louvre Museum, and the Palace of Versailles.\n\nFrance's economy is highly developed and diversified, with key sectors including aerospace, automobile manufacturing, and luxury goods. The country is also a leading exporter of agricultural products such as wine, cheese, and meat.\n\nFrance is a founding member of the European Union and plays an active role in global affairs. The country has a highly educated workforce and is committed to promoting innovation and sustainability."
+                  font="dejavu"
+                  font-color="#faead6"
+                  width="3.5"
+                  position="0 1.5 -3"
+                  wrap-count="50"
+                  anchor="center"
+                  align="center"
+                ></a-text>
+              </a-scene>
+            </div>
+            
+            <div id="offline-status">
+              <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+                France #6<br><br>
+                
+                2021 GDP: $3.15 trillion   2021 GDP per capita: $47,488<br><br>
+                
+                France is a Western European country famous for its rich history, culture, and cuisine. With a population of over 67 million, France is the world's 7th largest economy by nominal GDP and a member of the G7 group of leading industrialized countries.<br><br>
+                
+                France is renowned for its fashion industry, art, and architecture. It is home to some of the world's most famous landmarks such as the Eiffel Tower, the Louvre Museum, and the Palace of Versailles.<br><br>
+                
+                France's economy is highly developed and diversified, with key sectors including aerospace, automobile manufacturing, and luxury goods. The country is also a leading exporter of agricultural products such as wine, cheese, and meat.<br><br>
+                
+                France is a founding member of the European Union and plays an active role in global affairs. The country has a highly educated workforce and is committed to promoting innovation and sustainability.<br><br><br>
+              </div>
+            </div>
+            
+            <script>
+              if (navigator.onLine) {
+                document.getElementById("online-status").style.display = "block";
+                document.getElementById("offline-status").style.display = "none";
+              } else {
+                document.getElementById("online-status").style.display = "none";
+                document.getElementById("offline-status").style.display = "block";
+              }
+            </script>            
+        <div class="container">
+            <div class="flip-card-1" style="display: inline-block;">
+              <div class="flip-card-inner-1">
+                <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/236x/11/4b/04/114b04166f8fcf2f2f42f8cac6db7610.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Map</p>
+                </div>
+                <div class="flip-card-back-1">
+                  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7217416.757148175!2d-2.434834973192082!3d46.13904366637001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e1!3m2!1sen!2sus!4v1677029874873!5m2!1sen!2sus"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-2" style="display: inline-block;">
+              <div class="flip-card-inner-2">
+                <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/236x/58/10/6f/58106f1fc8f08c5d1de3f19e49f3712f.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">360 View</p>
+                </div>
+                <div class="flip-card-back-2">
+                  <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.google.com/maps/embed?pb=!4v1677083307886!6m8!1m7!1sCAoSLEFGMVFpcE1RV1V6N0hLdV9vY0pCNlNacm10TVFFcWlNZTRGS1c2V1JTVnUt!2m2!1d48.85837009999999!2d2.2944813!3f5.4582994691157865!4f-8.918580032406055!5f0.68175206954400546" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card-3" style="display: inline-block;">
+              <div class="flip-card-inner-3">
+                <div class="flip-card-front-3" style="background-size: 150%;background-image: url('https://i.pinimg.com/236x/ac/b7/e2/acb7e24c9cc3f92e9bc2cf220d309bcf.jpg');">
+              <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Economy</p>
+                </div>
+                <div class="flip-card-back-3">
+                  <iframe src="./widgets/frgdp.html" frameborder="0" style="width: 100%;border: none; height: 500px;"></iframe>  
+                </div>
+              </div>
+            </div>
+          </div>   
+        </article>
+        </section>
+        <footer>
+          <p>Forbes.inc</p>
+          <div class="Social-media">
+            <a class="sc" href="https://github.com/GameNotCreator/"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+            <a class="sc" href=""><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+            <a class="sc" href="https://www.instagram.com/game_notcreator/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a class="sc" href="https://www.youtube.com/@GameNotCreator"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
+          </div>
+          <p>Copyright Hedi Fourati © 2022-2023. All rights reserved.</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

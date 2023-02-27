@@ -7,6 +7,10 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/style.scss" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
     </head>
     <body bgcolor="#1f1a25">'
       <div id='stars'></div>
@@ -37,7 +41,7 @@
               <br>
               <li><a href="warren_buffett.html" style="text-decoration-line: none; color: antiquewhite;">Warren Buffett</a></li>
               <br>
-              <li><a href="larry_page.html" style="text-decoration-line: none; color: antiquewhite;">Larry Page/a></li>
+              <li><a href="larry_page.html" style="text-decoration-line: none; color: antiquewhite;">Larry Page</a></li>
               <br>
               <li><a href="sergey_brin.html" style="text-decoration-line: none; color: antiquewhite;">Sergey Brin</a></li>
               <br>
@@ -54,31 +58,59 @@
               </form>
           </nav>
           <article>
-          <p style="font-size: 50px;  color: #f5f5dc;text-align: center;">Elon Musk #1</p>
-          <p style="font-size: 20px;  color: #f5f5dc;text-align: center;">2022 Billionaires Net Worth : $219B &nbsp&nbsp&nbsp&nbsp Real Time Net Worth : $163.7B</p>
-          <ul>
-            <li style="font-size: 20px; color: #f5f5dc;">Elon Musk cofounded six companies including electric car maker Tesla, rocket producer SpaceX and tunneling startup Boring Company.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">He owns about 25% of Tesla between stock and options, but has pledged more than half his stock as collateral for loans.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">SpaceX, founded in 2002, is worth $127 billion after a funding round in May 2022; it quadrupled its value in three years.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">Boring Company, which aims to defeat traffic, raised $675 million in April 2022 at a $5.7 billion valuation.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">Twitter's board agreed to sell the company to Musk for $44 billion in April 2022, after he disclosed a 9.1% stake and threatened a hostile takeover.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The deal closed in October 2022 after Musk tried to back out and Twitter sued. Musk now owns an estimated 74% of the company.</li>
-          </ul>
+            <div id="online-status">
+              <a-scene embedded  style="height: 1000px;">
+                <a-text
+                    value="Elon Musk #1\n\n2022 Billionaires Net Worth : $219B\n\nElon Musk is a billionaire entrepreneur, inventor, and CEO of several innovative companies, including Tesla, SpaceX, Neuralink, and The Boring Company. He is known for his ambitious goals of creating a sustainable future for humanity and making humanity a multi-planetary species. \n\nThrough his companies, Musk has disrupted several industries, such as electric vehicles, space exploration, and tunnel construction. He has also been involved in developing new technologies, such as artificial intelligence and brain-computer interfaces.\n\nMusk has a background in engineering and physics and has been involved in several successful ventures, such as co-founding PayPal. He is known for his vision, persistence, and unconventional approach to problem-solving.\n\nMusk has also been a vocal advocate for renewable energy and sustainable transportation. He has been recognized for his contributions to science, technology, and environmental conservation, receiving several awards and honors, including the Order of Australia and the Royal Aeronautical Society Gold Medal."
+                    font="dejavu"
+                    font-color="#faead6"
+                    width="3.5"
+                    position="0 1.5 -3"
+                    wrap-count="50"
+                    anchor="center"
+                    align="center"
+                ></a-text>
+            </a-scene>            
+          </div>
+          <div id="offline-status">
+            <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+              Elon Musk #1<br><br>
+              
+              2022 Billionaires Net Worth : $219B<br><br>
+              
+              Elon Musk is a billionaire entrepreneur, inventor, and CEO of several innovative companies, including Tesla, SpaceX, Neuralink, and The Boring Company. He is known for his ambitious goals of creating a sustainable future for humanity and making humanity a multi-planetary species. <br><br>
+              
+              Through his companies, Musk has disrupted several industries, such as electric vehicles, space exploration, and tunnel construction. He has also been involved in developing new technologies, such as artificial intelligence and brain-computer interfaces.<br><br>
+              
+              Musk has a background in engineering and physics and has been involved in several successful ventures, such as co-founding PayPal. He is known for his vision, persistence, and unconventional approach to problem-solving.<br><br>
+              
+              Musk has also been a vocal advocate for renewable energy and sustainable transportation. He has been recognized for his contributions to science, technology, and environmental conservation, receiving several awards and honors, including the Order of Australia and the Royal Aeronautical Society Gold Medal.<br><br><br>
+            </div>              
+          </div>
+          <script>
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+          </script>      
           <div class="container">
               <div class="flip-card-1" style="display: inline-block;">
                 <div class="flip-card-inner-1">
-                  <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/564x/88/94/52/8894528940b3d7eb88a241e3c34f4e25.jpg');">
-                    <p style="vertical-align:middle;margin-top: 70px;">Map</p>
+                  <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/236x/a2/ac/26/a2ac26571b1c2f8827cee7a642995edd.jpg');">
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Tweets</p>
                   </div>
                   <div class="flip-card-back-1">
-                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=apple%20park+(Apple)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                  <a class="twitter-timeline" data-lang="en" data-width="800" data-height="1000" data-theme="dark" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by Elon Musk</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                   </div>
                 </div>
               </div>
               <div class="flip-card-2" style="display: inline-block;">
                 <div class="flip-card-inner-2">
-                  <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/474x/d2/8f/c9/d28fc95e1593f5a76abe03af5e6fada9.jpg');">
-                    <p style="vertical-align:middle;margin-top: 70px;">Video</p>
+                  <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/236x/df/3f/a2/df3fa2972d84b40dde5476d908b212c7.jpg');">
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Video</p>
                   </div>
                   <div class="flip-card-back-2">
                     <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/fr/elon_musk_the_mind_behind_tesla_spacex_solarcity" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
@@ -87,18 +119,15 @@
               </div>
               <div class="flip-card-3" style="display: inline-block;">
                 <div class="flip-card-inner-3">
-                  <div class="flip-card-front-3" style="background-image: url('https://i.pinimg.com/474x/52/df/64/52df6421599c3451d38c8bc28382117c.jpg');">
-                <p style="vertical-align:middle;margin-top: 70px;">Wealth History</p>
+                  <div class="flip-card-front-3" style="background-image: url('https://i.pinimg.com/236x/c9/9c/e4/c99ce4b5021ecc04895c94f1b5d5b0b8.jpg');">
+                  <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Wealth History</p>                  
                   </div>
                   <div class="flip-card-back-3">
-                    <iframe src="img/elonmuskworth.png" frameborder="0" style="width: 100%;border: none; height: 500px;"></iframe>  
+                    <img src="img/elonmuskworth.png" width="200%" height="auto"  style="border: none;background-color: #f5f5dc;">  
                   </div>
                 </div>
               </div>
             </div>   
-            <div align="center">
-              <iframe title="Apple iPhone 13 Pro Max" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/58eb085ff4e2440aa3609256210029b8/embed?autospin=1&autostart=1&ui_hint=0&ui_theme=dark" style="border-radius: 100px;"> </iframe>
-            </div>
          </article>
         </section>
         <footer>

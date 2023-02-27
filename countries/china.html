@@ -30,7 +30,7 @@
           <nav>
             <ul>
               <hr>
-              <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>
+              <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>   
               <hr>
               <li><a  href="united_states.html" style="text-decoration-line: none; color: antiquewhite;">United States of America<a></li>
                 <br>
@@ -59,18 +59,42 @@
               </form>
           </nav>
           <article>
-        <a-scene embedded  style="height: 1000px;">
-            <a-text
-                value="China #2\n\n2021 GDP: $16.16 trillion   2021 GDP per capita: $11,619\n\nChina is a populous country located in East Asia, with a population of over 1.4 billion people. Its vast landscape is home to many major cities, such as Beijing, Shanghai, and Guangzhou, and is steeped in a rich history and culture.\n\nChina is the world's second-largest economy by nominal GDP and the largest by purchasing power parity. Its mixed economy is characterized by a significant public sector and a rapidly growing private sector. The country is renowned for its technological advancement, with many of the world's leading tech companies based in China.\n\nBeyond its economic strength, China is a major player in global politics, as evidenced by its membership in the United Nations, BRICS, and other international organizations. Its military is one of the largest in the world and participates in various international missions. The country's values of socialism, harmony, and equality have had a profound impact on global culture and trends."
-                font="dejavu"
-                font-color="#faead6"
-                width="3.5"
-                position="0 1.5 -3"
-                wrap-count="50"
-                anchor="center"
-                align="center"
-            ></a-text>
-        </a-scene>
+            <div id="online-status">
+              <a-scene embedded  style="height: 1000px;">
+                <a-text
+                    value="China #2\n\n2021 PIB: ¥105.4 trillion   2021 GDP per capita: ¥76,211\n\nChina is the world's most populous country with over 1.4 billion people. It is located in East Asia and has a diverse landscape that includes the Himalayan mountains, the Gobi desert, and the Yangtze River. China has a rich history and culture, and its contributions to philosophy, literature, and the arts are renowned throughout the world.\n\nChina has the world's second-largest economy by nominal GDP, and is a leading manufacturing and trading power. Its economy is characterized by a mix of state-owned enterprises and private businesses. China is also a major player in the tech industry and has a rapidly growing middle class.\n\nIn addition to its economic power, China is also a key player in global politics. It is a permanent member of the United Nations Security Council and is a member of various other international organizations. China's military is the largest in the world, and it participates in peacekeeping missions and other international activities. The country's culture and values, including Confucianism and Taoism, have had a significant impact on global culture."
+                    font="dejavu"
+                    font-color="#faead6"
+                    width="3.5"
+                    position="0 1.5 -3"
+                    wrap-count="50"
+                    anchor="center"
+                    align="center"
+                ></a-text>
+        </a-scene>            
+        </div>
+        <div id="offline-status">
+          <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+            China #2<br><br>
+            
+            2021 PIB: ¥105.4 trillion   2021 GDP per capita: ¥76,211<br><br>
+            
+            China is the world's most populous country with over 1.4 billion people. It is located in East Asia and has a diverse landscape that includes the Himalayan mountains, the Gobi desert, and the Yangtze River. China has a rich history and culture, and its contributions to philosophy, literature, and the arts are renowned throughout the world.<br><br>
+            
+            China has the world's second-largest economy by nominal GDP, and is a leading manufacturing and trading power. Its economy is characterized by a mix of state-owned enterprises and private businesses. China is also a major player in the tech industry and has a rapidly growing middle class.<br><br>
+            
+            In addition to its economic power, China is also a key player in global politics. It is a permanent member of the United Nations Security Council and is a member of various other international organizations. China's military is the largest in the world, and it participates in peacekeeping missions and other international activities. The country's culture and values, including Confucianism and Taoism, have had a significant impact on global culture.<br><br><br>
+          </div>              
+        </div>
+        <script>
+          if (navigator.onLine) {
+            document.getElementById("online-status").style.display = "block";
+            document.getElementById("offline-status").style.display = "none";
+          } else {
+            document.getElementById("online-status").style.display = "none";
+            document.getElementById("offline-status").style.display = "block";
+          }
+        </script>  
         <div class="container">
             <div class="flip-card-1" style="display: inline-block;">
               <div class="flip-card-inner-1">

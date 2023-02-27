@@ -7,6 +7,10 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/style.scss" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
     </head>
     <body bgcolor="#1f1a25">'
       <div id='stars'></div>
@@ -54,17 +58,35 @@
               </form>
           </nav>
           <article>
-          <p style="font-size: 50px;  color: #f5f5dc;text-align: center;">Microsoft #2</p>
-          <p style="font-size: 20px;  color: #f5f5dc;text-align: center;">2022 Revenue : $184.9B &nbsp&nbsp&nbsp&nbsp Share Price : $256.77</p>
-          <ul>
-            <li style="font-size: 20px; color: #f5f5dc;">Microsoft Corp. engages in the development and support of software, services, devices, and solutions.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">It operates through the following business segments: Productivity and Business Processes; Intelligent Cloud; and More Personal Computing.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The Productivity and Business Processes segment comprises products and services in the portfolio of productivity, communication, and information services of the company spanning a variety of devices and platform.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The Intelligent Cloud segment refers to the public, private, and hybrid serve products and cloud services of the company which can power modern business.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The More Personal Computing segment encompasses products and services geared towards the interests of end users, developers, and IT professionals across all devices.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The firm also offers operating systems; cross-device productivity applications; server applications; business solution applications; desktop and server management tools; software development tools; video games; personal computers, tablets; gaming and entertainment consoles; other intelligent devices; and related accessories.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The company was founded by Paul Gardner Allen and William Henry Gates III in 1975 and is headquartered in Redmond, WA.</li>
-          </ul>
+            <div id="online-status">
+              <a-scene embedded  style="height: 1000px;">
+                <a-text
+                  value="Microsoft #2\n\n2022 Company Net Worth: $2.3 trillion\n\nMicrosoft Corporation is a technology company that develops, licenses, and sells computer software, consumer electronics, and personal computers. The company was founded in 1975 by Bill Gates and Paul Allen and has since become one of the largest and most influential companies in the world.\n\nMicrosoft is best known for its Windows operating system and Office software suite, but the company has also made significant contributions to the development of new technologies, such as artificial intelligence and cloud computing. It has also acquired several other companies, such as LinkedIn and GitHub, to expand its portfolio.\n\nMicrosoft has faced criticism in the past over its business practices, particularly with regards to its dominance in the personal computer market and its handling of security issues. However, the company has taken steps to address these concerns and has become a leader in the field of corporate social responsibility.\n\nToday, Microsoft continues to be a major player in the tech industry, with a strong focus on innovation and sustainability. Its products and services are used by millions of people around the world, and its impact on the global economy cannot be overstated."
+                  font="dejavu"
+                  font-color="#faead6"
+                  width="3.5"
+                  position="0 1.5 -3"
+                  wrap-count="50"
+                  anchor="center"
+                  align="center"
+                ></a-text>
+              </a-scene>            
+            </div>
+            <div id="offline-status">
+              <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+                Microsoft #2<br><br>
+                
+                2022 Company Net Worth: $2.3 trillion<br><br>
+                
+                Microsoft Corporation is a technology company that develops, licenses, and sells computer software, consumer electronics, and personal computers. The company was founded in 1975 by Bill Gates and Paul Allen and has since become one of the largest and most influential companies in the world.<br><br>
+                
+                Microsoft is best known for its Windows operating system and Office software suite, but the company has also made significant contributions to the development of new technologies, such as artificial intelligence and cloud computing. It has also acquired several other companies, such as LinkedIn and GitHub, to expand its portfolio.<br><br>
+                
+                Microsoft has faced criticism in the past over its business practices, particularly with regards to its dominance in the personal computer market and its handling of security issues. However, the company has taken steps to address these concerns and has become a leader in the field of corporate social responsibility.<br><br>
+                
+                Today, Microsoft continues to be a major player in the tech industry, with a strong focus on innovation and sustainability. Its products and services are used by millions of people around the world, and its impact on the global economy cannot be overstated.<br><br><br>
+              </div>              
+            </div>
           <div class="container">
               <div class="flip-card-1" style="display: inline-block;">
                 <div class="flip-card-inner-1">
