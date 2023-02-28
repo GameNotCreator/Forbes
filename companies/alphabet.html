@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Forbes | Alphabet</title>
+        <title>Forbes | Alphabet Inc</title>
         <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
         <meta name="viewport" conent="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/style.scss" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
+
     </head>
     <body bgcolor="#1f1a25">'
       <div id='stars'></div>
@@ -54,40 +59,74 @@
               </form>
           </nav>
           <article>
-          <p style="font-size: 50px;  color: #f5f5dc;text-align: center;">Alphabet #4</p>
-          <p style="font-size: 20px;  color: #f5f5dc;text-align: center;">2022 Revenue : $244.2B &nbsp&nbsp&nbsp&nbsp Share Price : $40.60</p>
-          <ul>
-            <li style="font-size: 20px; color: #f5f5dc;">Alphabet, Inc. is a holding company, which engages in the business of acquisition and operation of different companies.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">It operates through the Google and Other Bets segments.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The Google segment includes its main Internet products such as ads, Android, Chrome, hardware, Google Cloud, Google Maps, Google Play, Search, and YouTube.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The Other Bets segment consists of businesses such as Access, Calico, CapitalG, GV, Verily, Waymo, and X.</li>
-            <li style="font-size: 20px; color: #f5f5dc;">The company was founded by Lawrence E. Page and Sergey Mikhaylovich Brin on October 2, 2015 and is headquartered in Mountain View, CA.</li>
-          </ul>
+          <div id="online-status">
+            <a-scene embedded style="height: 1000px;">
+              <a-text
+                value="Alphabet Inc. #4\n\n2022 Company Net Worth: $1.8 trillion\n\nAlphabet Inc. is a multinational conglomerate that specializes in internet-related services and products. The company was created in 2015 as a restructuring of Google and became the parent company of several Google subsidiaries, including Google itself. \n\nAlphabet's subsidiaries cover a wide range of industries, including search engines, online advertising, cloud computing, hardware, and software. Some of the most well-known subsidiaries include YouTube, Google Maps, Google Drive, and Android.\n\nThe company is known for its strong focus on innovation and has invested heavily in research and development, particularly in the areas of artificial intelligence and machine learning. Alphabet is also committed to sustainability and has made significant efforts to reduce its carbon footprint.\n\nAlphabet has faced several legal challenges over the years, particularly regarding antitrust concerns. The company has been accused of monopolistic behavior in the search engine and online advertising markets.\n\nDespite these challenges, Alphabet remains one of the most valuable companies in the world and continues to dominate the tech industry."
+                font="dejavu"
+                font-color="#faead6"
+                width="3.5"
+                position="0 1.5 -3"
+                wrap-count="50"
+                anchor="center"
+                align="center"
+              ></a-text>
+            </a-scene>
+          </div>
+          
+          <div id="offline-status">
+            <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+              Alphabet Inc. #4<br><br>
+                        
+              2022 Company Net Worth: $1.8 trillion<br><br>
+                        
+              Alphabet Inc. is a multinational conglomerate that specializes in internet-related services and products. The company was created in 2015 as a restructuring of Google and became the parent company of several Google subsidiaries, including Google itself. <br><br>
+                        
+              Alphabet's subsidiaries cover a wide range of industries, including search engines, online advertising, cloud computing, hardware, and software. Some of the most well-known subsidiaries include YouTube, Google Maps, Google Drive, and Android.<br><br>
+                        
+              The company is known for its strong focus on innovation and has invested heavily in research and development, particularly in the areas of artificial intelligence and machine learning. Alphabet is also committed to sustainability and has made significant efforts to reduce its carbon footprint.<br><br>
+                        
+              Alphabet has faced several legal challenges over the years, particularly regarding antitrust concerns. The company has been accused of monopolistic behavior in the search engine and online advertising markets.<br><br>
+                        
+              Despite these challenges, Alphabet remains one of the most valuable companies in the world and continues to dominate the tech industry.<br><br><br>
+            </div>              
+          </div>
+          
+          <script>
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+          </script>
+          <br><br><br>
           <div class="container">
               <div class="flip-card-1" style="display: inline-block;">
                 <div class="flip-card-inner-1">
-                  <div class="flip-card-front-1" style="background-image: url('https://i.pinimg.com/474x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg');">
-                    <p style="vertical-align:middle;margin-top: 70px;">Map</p>
+                  <div class="flip-card-front-1" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1280px-Googleplex_HQ_%28cropped%29.jpg');">
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Map</p>
                   </div>
                   <div class="flip-card-back-1">
-                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=apple%20park+(Apple)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4039.1861587336975!2d-122.08857436797663!3d37.4220697756267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e1!3m2!1sen!2stn!4v1677593530218!5m2!1sen!2stn  "><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
                   </div>
                 </div>
               </div>
               <div class="flip-card-2" style="display: inline-block;">
                 <div class="flip-card-inner-2">
-                  <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/474x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg');">
-                    <p style="vertical-align:middle;margin-top: 70px;">Video</p>
+                  <div class="flip-card-front-2" style="background-image: url('https://imgur.com/JVzSSJZ.jpg');">
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Video</p>
                   </div>
                   <div class="flip-card-back-2">
-                    <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/MnrJzXM7a6o" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+                    <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/e4con87R_Dk" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
                   </div>
                 </div>
               </div>
               <div class="flip-card-3" style="display: inline-block;">
                 <div class="flip-card-inner-3">
-                  <div class="flip-card-front-3" style="background-image: url('https://i.pinimg.com/564x/1d/e5/46/1de546d21dba516439ef86910e389c50.jpg');">
-                <p style="vertical-align:middle;margin-top: 70px;">Stocks</p>
+                  <div class="flip-card-front-3" style="background-image: url('https://i.pinimg.com/564x/39/a9/5d/39a95d9c8d736dc170c120a9e8a94d49.jpg');">
+                <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Stocks</p>
                   </div>
                   <div class="flip-card-back-3">
                     <iframe src="./widgets/googl.html" frameborder="0" style="width: 100%;border: none; height: 500px;"></iframe>  
@@ -95,9 +134,6 @@
                 </div>
               </div>
             </div>   
-            <div align="center">
-              <iframe title="Apple iPhone 13 Pro Max" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/58eb085ff4e2440aa3609256210029b8/embed?autospin=1&autostart=1&ui_hint=0&ui_theme=dark" style="border-radius: 100px;"> </iframe>
-            </div>
          </article>
         </section>
         <footer>

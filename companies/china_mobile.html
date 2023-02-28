@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forbes | China Mobile</title>
+        <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/style.scss" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aframe-text-geometry-component@1.1.1/dist/aframe-text-geometry-component.min.js"></script>
+        <script src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css" />    
+
+    </head>
+    <body bgcolor="#1f1a25">'
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>'
+        <header>
+          <a href="main.html" style="text-decoration-line: none;"><h1 align="center" style="color:#f5f5dc; text-decoration-line: none;">Forbes</h1></a>
+        </header>
+        <ul class="navbar">
+          <li class="index"><a href="../index.html">Home</a></li>
+          <li class="index"><a href="../celebrities/index.html">Celebrities</a></li>
+          <li class="index"><a href="index.html">Companies</a></li>
+          <li class="index"><a href="../countries/index.html">Countries</a></li>
+        </ul>
+        <section>
+          <nav>
+            <ul>
+              <hr>
+              <p style="font-size: 20px;color: rgb(141, 138, 138);">Navigation</p>
+              <hr>
+              <li><a href="apple.html" style="text-decoration-line: none; color: antiquewhite;">Apple<a></li>
+              <br>
+              <li><a href="microsoft.html" style="text-decoration-line: none; color: antiquewhite;">Microsoft</a></li>
+              <br>
+              <li><a href="samsung.html" style="text-decoration-line: none; color: antiquewhite;">Samsung Electronics</a></li>
+              <br>
+              <li><a href="alphabet.html" style="text-decoration-line: none; color: antiquewhite;">Alphabet</a></li>
+              <br>
+              <li><a href="atandt.html" style="text-decoration-line: none; color: antiquewhite;">AT&T</a></li>
+              <br>
+              <li><a href="amazon.html" style="text-decoration-line: none; color: antiquewhite;">Amazon</a></li>
+              <br>
+              <li><a href="verizon_communications.html" style="text-decoration-line: none; color: antiquewhite;">Verizon Communications</a></li>
+              <br>
+              <li><a href="china_mobile.html" style="text-decoration-line: none; color: antiquewhite;">China Mobile</a></li>
+              <br>
+              <li><a href="walt_disney.html" style="text-decoration-line: none; color: antiquewhite;">Walt Disney</a></li>
+              <br>
+              <li><a href="meta.html" style="text-decoration-line: none; color: antiquewhite;">Meta Platforms</a></li>
+              <hr>
+            </ul>
+              <form id="searchForm" method="get" action="/search">
+                <input name="q" id="searchInput" type="text" size="15" placeholder="Type here…" />
+                <button class="button-submit" type="submit" >Search</button>
+              </form>
+          </nav>
+          <article>
+            <div id="online-status">
+                <a-scene embedded style="height: 1000px;">
+                  <a-text
+                    value="China Mobile #8\n\n2022 Company Net Worth: $139 billion\n\nChina Mobile is a telecommunications company that provides mobile voice and data services in Mainland China. It is the largest mobile telecommunications company in the world by market capitalization and also has the largest number of subscribers in the world, with over 940 million users as of 2021. In addition to mobile services, the company also provides fixed-line broadband services and other information and communication services.\n\nChina Mobile is known for its strong focus on innovation and has invested heavily in 5G technology, which it sees as a key growth driver for the company in the future. The company has also been expanding its international presence, particularly in emerging markets in Asia and Africa.\n\nChina Mobile has faced challenges in recent years, including increased competition in the Chinese telecommunications market and pressure from the Chinese government to reduce fees and improve service quality. Despite these challenges, the company remains a major player in the telecommunications industry and is continuing to invest in new technologies and services."
+                    font="dejavu"
+                    font-color="#faead6"
+                    width="3.5"
+                    position="0 1.5 -3"
+                    wrap-count="50"
+                    anchor="center"
+                    align="center"
+                  ></a-text>
+                </a-scene>
+              </div>
+              <div id="offline-status">
+                <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.3em; color: #fff; text-align: center; width: 350px; margin: 0 auto; margin-top: 1.5em; line-height: 1.5;">
+                  China Mobile #8<br><br>
+                  2022 Company Net Worth: $139 billion<br><br>
+          
+                  China Mobile is a telecommunications company that provides mobile voice and data services in Mainland China. It is the largest mobile telecommunications company in the world by market capitalization and also has the largest number of subscribers in the world, with over 940 million users as of 2021. In addition to mobile services, the company also provides fixed-line broadband services and other information and communication services.<br><br>
+                            
+                  China Mobile is known for its strong focus on innovation and has invested heavily in 5G technology, which it sees as a key growth driver for the company in the future. The company has also been expanding its international presence, particularly in emerging markets in Asia and Africa.<br><br>
+                            
+                  China Mobile has faced challenges in recent years, including increased competition in the Chinese telecommunications market and pressure from the Chinese government to reduce fees and improve service quality. Despite these challenges, the company remains a major player in the telecommunications industry and is continuing to invest in new technologies and services.<br><br><br>                  
+            </div>              
+          </div>
+          <script>
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+          </script> 
+          <div class="container">
+              <div class="flip-card-1" style="display: inline-block;">
+                <div class="flip-card-inner-1">
+                  <div class="flip-card-front-1" style="background-image: url('https://images.skyscrapercenter.com/building/china-mobile-building-marshall-gerometta.jpg');">
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Map</p>
+                  </div>
+                  <div class="flip-card-back-1">
+                    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2110.2964452219358!2d114.40841422026129!3d22.6935842383025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34046edf71ccf407%3A0x6c3472b77e78db38!2sChina%20Mobile!5e1!3m2!1sen!2stn!4v1677601281864!5m2!1sen!2stn"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card-2" style="display: inline-block;">
+                <div class="flip-card-inner-2">
+                  <div class="flip-card-front-2" style="background-image: url('https://i.pinimg.com/236x/80/dc/30/80dc3013ce5baf1ad1b1d2fd96d37f84.jpg');">
+                    <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Video</p>
+                  </div>
+                  <div class="flip-card-back-2">
+                    <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/VSUnP3Lsfr4" width="auto" height="auto" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card-3" style="display: inline-block;">
+                <div class="flip-card-inner-3">
+                  <div class="flip-card-front-3" style="background-image: url('https://pplware.sapo.pt/wp-content/uploads/2020/05/China-Mobile-5g-720x432.jpg');">
+                <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Stocks</p>
+                  </div>
+                  <div class="flip-card-back-3">
+                    <iframe src="./widgets/chl.html" frameborder="0" style="width: 100%;border: none; height: 500px;"></iframe>  
+                  </div>
+                </div>
+              </div>
+            </div>   
+         </article>
+        </section>
+        <footer>
+          <p>Forbes.inc</p>
+          <div class="Social-media">
+            <a class="sc" href="https://github.com/GameNotCreator/"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+            <a class="sc" href=""><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+            <a class="sc" href="https://www.instagram.com/game_notcreator/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+            <a class="sc" href="https://www.youtube.com/@GameNotCreator"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
+          </div>
+          <p>Copyright Hedi Fourati © 2022-2023. All rights reserved.</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
