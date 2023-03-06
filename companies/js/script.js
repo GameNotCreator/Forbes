@@ -4,34 +4,34 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
     var searchValue = document.getElementById("searchInput").value;
     switch (searchValue.toLowerCase()) {
         case 'microsoft':
-          window.location.href = "microsoft.html";
+          window.location.href = "./microsoft.html";
           break;
         case 'apple':
-          window.location.href = "apple.html";
+          window.location.href = "./apple.html";
           break;
         case 'samsung':
-          window.location.href = "samsung.html";
+          window.location.href = "./samsung.html";
           break;
         case 'alphabet' || 'google':
-          window.location.href = "alphabet.html";
+          window.location.href = "./alphabet.html";
           break;      
         case 'amazon' || 'amzn':
-          window.location.href = "amazon.html";
+          window.location.href = "./amazon.html";
           break;
         case 'verizon communications' || 'verizon communication':
-          window.location.href = "verizon_communications.html";
+          window.location.href = "./verizon_communications.html";
           break;
         case 'atandt' || 'at&t':
-          window.location.href = "atandt.html";
+          window.location.href = "./atandt.html";
           break;
         case 'china mobile':
-          window.location.href = "china_mobile.html";
+          window.location.href = "./china_mobile.html";
           break;
         case 'walt disney' || 'disney':
-          window.location.href = "walt_disney";
+          window.location.href = "./walt_disney";
           break;
         case 'meta' || 'facebook':
-          window.location.href = "mata.html";
+          window.location.href = "./mata.html";
           break;
         case 'united states' || 'usa':
           window.location.href = "./../countries/united_states.html";

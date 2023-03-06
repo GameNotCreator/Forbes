@@ -4,34 +4,34 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
   var searchValue = document.getElementById("searchInput").value;
   switch (searchValue.toLowerCase()) {
     case 'united states' || 'usa':
-      window.location.href = "./../countries/united_states.html";
+      window.location.href = "./countries/united_states.html";
       break;
     case 'united kingdom' || 'uk':
-      window.location.href = "./../countries/united_kingdom.html";
+      window.location.href = "./countries/united_kingdom.html";
       break;
     case 'japan':
-      window.location.href = "./../countries/japan.html";
+      window.location.href = "./countries/japan.html";
       break;
     case 'italy':
-      window.location.href = "./../countries/italy.html";
+      window.location.href = "./countries/italy.html";
       break;             
     case 'india':
-      window.location.href = "./../countries/india.html";
+      window.location.href = "./countries/india.html";
       break;            
     case 'germany':
-      window.location.href = "./../countries/germany.html";
+      window.location.href = "./countries/germany.html";
       break;    
     case 'france':
-      window.location.href = "./../countries/france.html";
+      window.location.href = "./countries/france.html";
       break;        
     case 'china':
-      window.location.href = "./../countries/china.html";
+      window.location.href = "./countries/china.html";
       break;        
     case 'canada.html':
-      window.location.href = "./../countries/canada.html";
+      window.location.href = "./countries/canada.html";
       break;        
     case 'brazil':
-      window.location.href = "./../countries/brazil.html";
+      window.location.href = "./countries/brazil.html";
       break;
     case 'microsoft':
       window.location.href = "./companies/microsoft.html";
@@ -40,7 +40,7 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
       window.location.href = "./companies/apple.html";
       break;
     case 'samsung':
-      window.location.href = "s./companies/samsung.html";
+      window.location.href = "./companies/samsung.html";
       break;
     case 'alphabet' || 'google':
       window.location.href = "./companies/alphabet.html";

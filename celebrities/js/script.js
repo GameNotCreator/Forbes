@@ -60,6 +60,36 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
         case 'singapore.html':
           window.location.href = "./../countries/singapore.html";
           break;
+          case 'microsoft':
+            window.location.href = "./../companies/microsoft.html";
+            break;
+          case 'apple':
+            window.location.href = "./../companies/apple.html";
+            break;
+          case 'samsung':
+            window.location.href = "./../companies/samsung.html";
+            break;
+          case 'alphabet' || 'google':
+            window.location.href = "./../companies/alphabet.html";
+            break;      
+          case 'amazon' || 'amzn':
+            window.location.href = "./../companies/amazon.html";
+            break;
+          case 'verizon communications' || 'verizon communication':
+            window.location.href = "./../companies/verizon_communications.html";
+            break;
+          case 'atandt' || 'at&t':
+            window.location.href = "./../companies/atandt.html";
+            break;
+          case 'china mobile':
+            window.location.href = "./../companies/china_mobile.html";
+            break;
+          case 'walt disney' || 'disney':
+            window.location.href = "./../companies/walt_disney";
+            break;
+          case 'meta' || 'facebook':
+            window.location.href = "./../companies/mata.html";
+            break;
         default:
           alert(`Imposible de trouver ${searchValue}`)
           break;
