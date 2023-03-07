@@ -89,7 +89,10 @@
                 France is a founding member of the European Union and plays an active role in global affairs. The country has a highly educated workforce and is committed to promoting innovation and sustainability.<br><br><br>
               </div>
             </div>
-            
+            <div style="text-align:center; margin-top: 1em;">
+              <button id="online-button" class="display-button active-button" onclick="showOnline()">3D Motion</button>
+              <button id="offline-button" class="display-button" onclick="showOffline()">Freeze</button>
+            </div>
             <script>
               if (navigator.onLine) {
                 document.getElementById("online-status").style.display = "block";
@@ -98,7 +101,48 @@
                 document.getElementById("online-status").style.display = "none";
                 document.getElementById("offline-status").style.display = "block";
               }
-            </script>            
+              function showOnline() {
+                var onlineVersion = document.getElementById("online-status");
+                var offlineVersion = document.getElementById("offline-status");
+                var onlineButton = document.getElementById("online-button");
+                var offlineButton = document.getElementById("offline-button");
+
+                onlineVersion.style.display = "block";
+                offlineVersion.style.display = "none";
+                onlineButton.classList.add("active-button");
+                offlineButton.classList.remove("active-button");
+              }
+
+              function showOffline() {
+                var onlineVersion = document.getElementById("online-status");
+                var offlineVersion = document.getElementById("offline-status");
+                var onlineButton = document.getElementById("online-button");
+                var offlineButton = document.getElementById("offline-button");
+
+                onlineVersion.style.display = "none";
+                offlineVersion.style.display = "block";
+                onlineButton.classList.remove("active-button");
+                offlineButton.classList.add("active-button");
+              }
+            </script>   
+            <style>
+              .display-button {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #fff;
+                background-color: #2e2e2e;
+                border: none;
+                border-radius: 4px;
+                padding: 1em 2em;
+                margin: 0 1em;
+                cursor: pointer;
+              }
+            
+              .active-button {
+                background-color: #007acc;
+              }
+            </style>
+            <br><br><br>   
         <div class="container">
             <div class="flip-card-1" style="display: inline-block;">
               <div class="flip-card-inner-1">

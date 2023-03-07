@@ -83,6 +83,10 @@
                   The country is currently undergoing a period of significant change as it prepares to leave the European Union and forge new relationships with other countries around the world.<br><br><br>
                 </div>
               </div>
+              <div style="text-align:center; margin-top: 1em;">
+                <button id="online-button" class="display-button active-button" onclick="showOnline()">3D Motion</button>
+                <button id="offline-button" class="display-button" onclick="showOffline()">Freeze</button>
+              </div>
               <script>
                 if (navigator.onLine) {
                   document.getElementById("online-status").style.display = "block";
@@ -91,8 +95,48 @@
                   document.getElementById("online-status").style.display = "none";
                   document.getElementById("offline-status").style.display = "block";
                 }
+                function showOnline() {
+                  var onlineVersion = document.getElementById("online-status");
+                  var offlineVersion = document.getElementById("offline-status");
+                  var onlineButton = document.getElementById("online-button");
+                  var offlineButton = document.getElementById("offline-button");
+  
+                  onlineVersion.style.display = "block";
+                  offlineVersion.style.display = "none";
+                  onlineButton.classList.add("active-button");
+                  offlineButton.classList.remove("active-button");
+                }
+  
+                function showOffline() {
+                  var onlineVersion = document.getElementById("online-status");
+                  var offlineVersion = document.getElementById("offline-status");
+                  var onlineButton = document.getElementById("online-button");
+                  var offlineButton = document.getElementById("offline-button");
+  
+                  onlineVersion.style.display = "none";
+                  offlineVersion.style.display = "block";
+                  onlineButton.classList.remove("active-button");
+                  offlineButton.classList.add("active-button");
+                }
               </script>   
-              <br><br>
+              <style>
+                .display-button {
+                  font-size: 1.2em;
+                  font-weight: bold;
+                  color: #fff;
+                  background-color: #2e2e2e;
+                  border: none;
+                  border-radius: 4px;
+                  padding: 1em 2em;
+                  margin: 0 1em;
+                  cursor: pointer;
+                }
+              
+                .active-button {
+                  background-color: #007acc;
+                }
+              </style>
+              <br><br><br> 
         <div class="container">
             <div class="flip-card-1" style="display: inline-block;">
               <div class="flip-card-inner-1">
@@ -100,7 +144,7 @@
                   <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Map</p>
                 </div>
                 <div class="flip-card-back-1">
-                  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9552208.679939123!2d-13.42571800979371!3d54.23173390599232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2stn!4v1677435934558!5m2!1sen!2stn"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11380591.105631694!2d-13.427202483763564!3d54.231625163981974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e1!3m2!1sen!2stn!4v1678214437832!5m2!1sen!2stn"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
                 </div>
               </div>
             </div>

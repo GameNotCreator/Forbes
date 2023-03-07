@@ -87,7 +87,10 @@
                   In addition to its economic prowess, Canada is recognized for its universal healthcare system, strong social safety net, and commitment to environmental sustainability. The country is also active in international affairs, participating in various global organizations such as the United Nations and NATO.<br><br><br>
                 </div>
               </div>
-              
+              <div style="text-align:center; margin-top: 1em;">
+                <button id="online-button" class="display-button active-button" onclick="showOnline()">3D Motion</button>
+                <button id="offline-button" class="display-button" onclick="showOffline()">Freeze</button>
+              </div>
               <script>
                 if (navigator.onLine) {
                   document.getElementById("online-status").style.display = "block";
@@ -96,7 +99,48 @@
                   document.getElementById("online-status").style.display = "none";
                   document.getElementById("offline-status").style.display = "block";
                 }
-              </script>              
+                function showOnline() {
+                  var onlineVersion = document.getElementById("online-status");
+                  var offlineVersion = document.getElementById("offline-status");
+                  var onlineButton = document.getElementById("online-button");
+                  var offlineButton = document.getElementById("offline-button");
+  
+                  onlineVersion.style.display = "block";
+                  offlineVersion.style.display = "none";
+                  onlineButton.classList.add("active-button");
+                  offlineButton.classList.remove("active-button");
+                }
+  
+                function showOffline() {
+                  var onlineVersion = document.getElementById("online-status");
+                  var offlineVersion = document.getElementById("offline-status");
+                  var onlineButton = document.getElementById("online-button");
+                  var offlineButton = document.getElementById("offline-button");
+  
+                  onlineVersion.style.display = "none";
+                  offlineVersion.style.display = "block";
+                  onlineButton.classList.remove("active-button");
+                  offlineButton.classList.add("active-button");
+                }
+              </script>   
+              <style>
+                .display-button {
+                  font-size: 1.2em;
+                  font-weight: bold;
+                  color: #fff;
+                  background-color: #2e2e2e;
+                  border: none;
+                  border-radius: 4px;
+                  padding: 1em 2em;
+                  margin: 0 1em;
+                  cursor: pointer;
+                }
+              
+                .active-button {
+                  background-color: #007acc;
+                }
+              </style>
+              <br><br><br>        
         <div class="container">
             <div class="flip-card-1" style="display: inline-block;">
               <div class="flip-card-inner-1">
@@ -104,7 +148,7 @@
                   <p style="vertical-align:middle;margin-top: 70px;text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0px 0px 4px #fff; color: #fff;font-size: 30px;">Map</p>
                 </div>
                 <div class="flip-card-back-1">
-                  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18876608.141712062!2d-113.7242306684268!3d54.72240467615603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2stn!4v1677504241504!5m2!1sen!2stn"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+                  <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22489708.918836635!2d-113.7242306684268!3d54.72240467615603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e1!3m2!1sen!2stn!4v1678214724414!5m2!1sen!2stn"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
                 </div>
               </div>
             </div>

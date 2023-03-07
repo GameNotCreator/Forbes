@@ -82,16 +82,60 @@
                   Larry Ellison is a billionaire entrepreneur and the co-founder of software company Oracle Corporation. He served as the CEO of the company for several years and is now the chairman of the board and chief technology officer. \n\nEllison is known for his innovative approach to business and his focus on developing cutting-edge technology. Under his leadership, Oracle has become one of the largest software companies in the world, providing a wide range of products and services to businesses of all sizes.\n\nIn addition to his work with Oracle, Ellison is also known for his interest in sailing and his involvement in the America's Cup. He has sponsored several sailing teams over the years and was a member of the winning team in 2010.\n\nEllison has also been involved in philanthropy, supporting a wide range of causes through the Lawrence Ellison Foundation. He has donated millions of dollars to medical research, education, and environmental conservation.<br><br><br>
               </div>
           </div>
-          
+          <div style="text-align:center; margin-top: 1em;">
+            <button id="online-button" class="display-button active-button" onclick="showOnline()">3D Motion</button>
+            <button id="offline-button" class="display-button" onclick="showOffline()">Freeze</button>
+          </div>
           <script>
-              if (navigator.onLine) {
-                  document.getElementById("online-status").style.display = "block";
-                  document.getElementById("offline-status").style.display = "none";
-              } else {
-                  document.getElementById("online-status").style.display = "none";
-                  document.getElementById("offline-status").style.display = "block";
-              }
-          </script>          
+            if (navigator.onLine) {
+              document.getElementById("online-status").style.display = "block";
+              document.getElementById("offline-status").style.display = "none";
+            } else {
+              document.getElementById("online-status").style.display = "none";
+              document.getElementById("offline-status").style.display = "block";
+            }
+            function showOnline() {
+              var onlineVersion = document.getElementById("online-status");
+              var offlineVersion = document.getElementById("offline-status");
+              var onlineButton = document.getElementById("online-button");
+              var offlineButton = document.getElementById("offline-button");
+
+              onlineVersion.style.display = "block";
+              offlineVersion.style.display = "none";
+              onlineButton.classList.add("active-button");
+              offlineButton.classList.remove("active-button");
+            }
+
+            function showOffline() {
+              var onlineVersion = document.getElementById("online-status");
+              var offlineVersion = document.getElementById("offline-status");
+              var onlineButton = document.getElementById("online-button");
+              var offlineButton = document.getElementById("offline-button");
+
+              onlineVersion.style.display = "none";
+              offlineVersion.style.display = "block";
+              onlineButton.classList.remove("active-button");
+              offlineButton.classList.add("active-button");
+            }
+          </script>   
+          <style>
+            .display-button {
+              font-size: 1.2em;
+              font-weight: bold;
+              color: #fff;
+              background-color: #2e2e2e;
+              border: none;
+              border-radius: 4px;
+              padding: 1em 2em;
+              margin: 0 1em;
+              cursor: pointer;
+            }
+          
+            .active-button {
+              background-color: #007acc;
+            }
+          </style>
+          <br><br><br>   
           <div class="container">
             <div class="flip-card-1" style="display: inline-block;">
               <div class="flip-card-inner-1">
